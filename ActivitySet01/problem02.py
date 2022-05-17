@@ -1,3 +1,5 @@
 # Why Program
 
-print("hello world")
+efs='1.97'
+print(type(efs))
+
