@@ -1,15 +1,15 @@
 # Loops & Iterators
-score = float(input("Enter Score: "))
-if score>=0.9:
-      x='A'
-elif score>=0.8:
-      x='B'
-elif score>=0.7:
-      x='C'
-elif score>=0.6:
-      x='D'
-elif score<0.6:
-      x='F'
-else:
-      x='out of range"'
-print(x)
+largest = None
+smallest = None
+while True:
+    num = raw_input("Enter a number: ")
+    if num == "done": break
+    try:
+        num = int(num)
+        if largest is None or largest < num: largest = num
+        if smallest is None or smallest > num: smallest = num
+    except:
+        print ("Invalid input")
+        continue
+print ("Maximum is",largest)
+print ("Minimum is",smallest)
