@@ -2,8 +2,9 @@
 largest = None
 smallest = None
 while True:
-    num = raw_input("Enter a number: ")
-    if num == "done": break
+    num = input("Enter a number: ")
+    if num == "done":
+      break
     try:
         num = int(num)
         if largest is None or largest < num: largest = num
@@ -13,3 +14,12 @@ while True:
         continue
 print ("Maximum is",largest)
 print ("Minimum is",smallest)
+
+
+
+
+
+
+
+
+
