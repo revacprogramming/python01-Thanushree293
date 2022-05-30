@@ -1,2 +1,7 @@
-# Network Programming
-# https://www.py4e.com/lessons/network
+line = "thanu@gmail.com sat==23:13:44"
+words=line.split()
+print(words)
+email=words[0]
+print(email)
+y= email.split("@")
+print(y)
