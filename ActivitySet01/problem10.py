@@ -7,4 +7,4 @@ print(words)
 email=words[0]
 print(email)
 y= email.split("@")
-print(y)
+print(y,email)
