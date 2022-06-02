@@ -9,3 +9,4 @@ for line in fh:
 lst = list(set(lst))
 lst.sort()
 print(lst)
+print
