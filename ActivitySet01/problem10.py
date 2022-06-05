@@ -1,11 +1,15 @@
 # Dictionaries
-
-filename = "dataset/mbox-short.txt"
-line = "thanu@gmail.com sat==23:13:44"
-words=line.split()
-print(words)
-email=words[0]
-print(email)
-y= email.split("@")
-print(y,email)
-email
+fname = input("Enter file name: ")
+fh = open(fname)
+lst = list()
+for line in fh:
+    line = line.rstrip()
+    if line == " " : continue
+    words = line.split()
+    for i in words:
+        if i in lst:
+            continue
+        else:
+            lst.append(i)
+lst.sort()
+print(lst)
