@@ -1,20 +1,12 @@
-# Dictionaries
-name = raw_input("Enter file:")
-if len(name) < 1 : name = "mbox-short.txt"
-counts = dict()
-handle = open(name)
+#dictionaries
+filename = "dataset/mbox-short.txt"
+count=dict()
+name = input("Enter the file name:")
+handle = open(name,'r')
 for line in handle:
-    line = line.strip()
-    if line.startswith('From ') :
-        person = line.split()
-        need = person[1]
-        counts[need] = counts.get(need,0)+1
-    else:
+    if not line.startswith('From '): 
         continue
-bigcount = None
-bigword = None
-for need,count in counts.items():
-    if bigcount is None or count > bigcount:
-        bigword = need
-        bigcount = count  
-print(bigword, bigcount)
+    words=line.split()
+    words=words[1]
+    count[words]=count.get(words,0)+1
+print(words, count[words])
