@@ -6,7 +6,7 @@ while True:
     if num == "done":
       break
     try:
-        num = int(num)
+        num = int(num)#elif also can be used
         if largest is None or largest < num: largest = num
         if smallest is None or smallest > num: smallest = num
     except:

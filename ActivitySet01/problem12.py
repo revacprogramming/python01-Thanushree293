@@ -1,3 +1,13 @@
-# Regular Expressions
-# https://www.py4e.com/lessons/regex
-htgvf gbb
+from turtle import *
+ 
+bgcolor('black')
+speed(0)
+hideturtle()
+for i in range(120):
+     color('red')
+     circle(i)
+     color("orange")
+     circle(i*0.9)
+     right(3)
+     forward(5)
+done()

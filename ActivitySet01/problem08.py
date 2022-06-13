@@ -10,4 +10,5 @@ for line in fh:
                 ans = ans + float(line[20:])
                 count = count + 1
 print
-print("Average spam confidence:", ans/count)
+print("Average spam confidence:", ans/count) 
+#try this print(f"Average spam confidence: {sm/count}")
